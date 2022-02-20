@@ -18,9 +18,6 @@ COPY . /usr/share/divido/src/
 
 COPY --from=vendor /tmp/vendor/ /usr/share/divido/src/vendor/
 
-WORKDIR /usr/share/divido/src/public/
-RUN [ "php", "index.php" ]
-
 WORKDIR /usr/share/divido/src/
-RUN ["./vendor/bin/phpunit", "--testdox", "tests"]
+CMD ["./vendor/bin/phpunit", "--testdox", "tests"]
 
