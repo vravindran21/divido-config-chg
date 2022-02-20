@@ -9,9 +9,9 @@ The list of config files is set in **$config_files**.
 
 The required config values can be accessed via **$config->getConfig('environment')**.
 
-I have added a **Dockerfile** to the project to make it easdocker run -it divido-config-chgy to run the application.
+I have added a **Dockerfile** to the project to make it easy.
 
-To run the tests, use below docker commands from inside the **src** directory
+To run the tests, use below docker commands from inside the **src** directory.
 
 docker build -t divido-config-chg .
 
